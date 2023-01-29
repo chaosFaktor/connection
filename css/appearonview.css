@@ -1,0 +1,15 @@
+
+
+.slideinonview{
+    left:0;transform:translateX(-100%);
+}
+.slideinleft{
+    animation-name:slideinLeft;
+    animation-duration: 1s;
+    transform:translateX(0)
+}
+
+@keyframes slideinLeft{
+    0%   {left:0;transform:translateX(-100%)}
+    100%{transform:translateX(0)}
+}

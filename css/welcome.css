@@ -82,7 +82,3 @@ bold{
     0%  {padding-left:28px}
     100%{padding-left:0}
 }
-@keyframes slideinRight{
-    0%   {left:0;transform:translateX(-100%)}
-    100%{}
-}

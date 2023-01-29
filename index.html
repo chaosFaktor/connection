@@ -7,24 +7,9 @@
 
     <link rel="stylesheet" type="text/css" href="./css/welcome.css" />
     <link rel="stylesheet" type="text/css" href="./css/basic.css" />
-    <script src="./js/dynamicmovement.js"></script>
-    <script>
-        console.log("start");
-        window.onscroll = function(){
-            console.log(scrollY);
-        //  Window scrolling manager
-            if(window.scrollY >= 780) { 
-                document.getElementById("banner").style.position = "absolute";
-                
-            } if(window.scrollY < 780) {
-                document.getElementById("banner").style.position = "fixed";
-            } if(window.scroll > 927) {
-                document.getElementById("banner2").style.position = "fixed";
-            } else if(window.scroll < 927) {
-                document.getElementById("banner2").style.position = "relative";
-            }
-        };
-    </script>
+    <link rel="stylesheet" type="text/css" href="./css/appearonview.css" />
+
+
 </head>
 
 <style>
@@ -43,10 +28,10 @@
 
 <body>
     <div class="banner favicon" id="banner">
-        <div class="heading">
+        <div class="heading slideinleft">
             <div style="height: 75%">
-                <h1>connection</h1>
-                <h2>Coding — Reverse Engineering</h2>
+                <h1 class="slideinleft">connection</h1>
+                <h2 class="slideinleft">Coding — Reverse Engineering</h2>
             </div>
         </div>
     </div>
@@ -60,11 +45,11 @@
     </div>
 
     
-    <div class="banner terminalcrap" id="banner2">
+    <div class="banner terminalcrap slideinonview" id="banner2">
         <div class="heading">
             <div style="height: 75%">
-                <h1>FSFE supported</h1>
-                <h2>Built in the Youth-Hacking-For-Freedom contest hosted by FSFE</h2>
+                <h1 class="slideinonview">FSFE supported</h1>
+                <h2 class="slideinonview">Built in the Youth-Hacking-For-Freedom contest hosted by FSFE</h2>
             </div>
         </div>
     </div>
@@ -78,3 +63,24 @@
         
     </div>
 </body>
+
+
+
+<script src="/js/appearonview.js"></script>
+<script>
+    console.log("start");
+    window.onscroll = function(){
+        console.log(scrollY);
+    //  Window scrolling manager
+        if(window.scrollY >= 780) { 
+            document.getElementById("banner").style.position = "absolute";
+            
+        } if(window.scrollY < 780) {
+            document.getElementById("banner").style.position = "fixed";
+        } if(window.scroll > 927) {
+            document.getElementById("banner2").style.position = "fixed";
+        } else if(window.scroll < 927) {
+            document.getElementById("banner2").style.position = "relative";
+        }
+    };
+</script>

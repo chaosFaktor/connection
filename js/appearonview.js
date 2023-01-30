@@ -1,27 +1,39 @@
 
 
 (function() {
-    let elements;
+    let elementsL;
+    let elementsR;
     let windowHeight;
     
   
     function init() {
-      elements = document.querySelectorAll('.slideinonview');
-      console.log(elements);
+      elementsL = document.querySelectorAll('.slideinonviewL');
+      elementsR = document.querySelectorAll('.slideinonviewR');
       windowHeight = window.innerHeight;
     }
   
     function checkPosition() {
         
-        for (let i = 0; i < elements.length; i++) {
-            let element = elements[i];
-            let positionFromTop = elements[i].getBoundingClientRect().top;
+      for (let i = 0; i < elementsL.length; i++) {
+        let element = elementsL[i];
+        let positionFromTop = elementsL[i].getBoundingClientRect().top;
   
-            if (positionFromTop <= windowHeight) {
+        if (positionFromTop <= windowHeight) {
         
 
-                element.classList.add('slideinleft');
-                element.classList.remove('hidden');
+            element.classList.add('slideinleft');
+            element.classList.remove('hidden');
+        }
+      }
+      for (let i = 0; i < elementsR.length; i++){
+        let element = elementsL[i];
+        let positionFromTop = elementsL[i].getBoundingClientRect().top;
+  
+        if (positionFromTop <= windowHeight) {
+        
+
+            element.classList.add('slideinRight');
+            element.classList.remove('hidden');
         }
       }
     }

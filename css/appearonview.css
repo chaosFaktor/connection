@@ -1,15 +1,27 @@
 
 
-.slideinonview{
+.slideinonviewL{
     left:0;transform:translateX(-100%);
+}
+.slideinonviewR{
+    left:0;transform: translateX(200%);
 }
 .slideinleft{
     animation-name:slideinLeft;
     animation-duration: 1s;
     transform:translateX(0)
 }
+.slideinright{
+    animation-name:slideinright;
+    animation-duration: 1s;
+    transform:translateX(0)
+}
 
 @keyframes slideinLeft{
     0%   {left:0;transform:translateX(-100%)}
+    100%{transform:translateX(0)}
+}
+@keyframes slideinright{
+    0%   {left:0;transform:translateX(200%)}
     100%{transform:translateX(0)}
 }

@@ -1,23 +1,26 @@
 .container {
-    width: 100%;
-    height: 100%;
-    background-color:rgb(34, 34, 34);
-    margin:0 auto;
-    color:white;
-    font-size: 80px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(34, 34, 34);
+  margin: 0 auto;
+  color: white;
+  font-size: 80px;
 }
-.container h1{
-    font-size: 80px;
-    text-align: center;
-    text-shadow:4px 2px 0 black;
+.container h1 {
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 4px 2px 0 black;
 }
-.container p{
-    font-size: 40px;
-    margin-left:20px;
+.container p {
+  font-size: 40px;
+  margin-left: 20px;
 }
-.container .blackbox{
-    background-color: rgba(0, 0, 0, 0.699);
+.container .blackbox {
+  background-color: rgba(0, 0, 0, 0.699);
 }
-.fiftybreak{
-    height:50px
+.fiftybreak {
+  height: 50px;
+}
+.centered {
+  text-align: center;
 }

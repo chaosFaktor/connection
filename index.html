@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 
-
 <head>
-    <link rel="shortcut icon" href="./images/favicon.ico" />
-    <title>Willkommen!</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" />
+  <title>Willkommen!</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/welcome.css" />
-    <link rel="stylesheet" type="text/css" href="./css/basic.css" />
-    <link rel="stylesheet" type="text/css" href="./css/appearonview.css" />
-
-
+  <link rel="stylesheet" type="text/css" href="./css/welcome.css" />
+  <link rel="stylesheet" type="text/css" href="./css/basic.css" />
+  <link rel="stylesheet" type="text/css" href="./css/appearonview.css" />
 </head>
 
 <style>
-    *{animation-name:slideinRight;animation-duration: 1s;}
-    .favicons{
-        /*background-image: url('./images/favicon.ico');*/
-    }
-    .terminalcrap{
-        background-image: url('./images/terminalrandom1.png')
-    }
-    .terminalcrap .heading div{
-        background-color: rgba(0, 0, 0, 0.418);
-    }
-    
+  * {
+    animation-name: slideinRight;
+    animation-duration: 1s;
+  }
+  .favicons {
+    /*background-image: url('./images/favicon.ico');*/
+  }
+  .terminalcrap {
+    background-image: url("./images/terminalrandom1.png");
+  }
+  .terminalcrap .heading div {
+    background-color: rgba(0, 0, 0, 0.418);
+  }
 </style>
 
 <body>
-    <div class="banner favicon" id="banner">
-        <div class="heading slideinleft">
-            <div style="height: 75%">
-                <h1 class="slideinleft">connection</h1>
-                <h2 class="slideinleft">Coding — Reverse Engineering</h2>
-            </div>
-        </div>
+  <div class="banner favicon" id="banner">
+    <div class="heading slideinleft">
+      <div style="height: 75%">
+        <h1 class="slideinleft">connection</h1>
+        <h2 class="slideinleft">Coding — Reverse Engineering</h2>
+      </div>
     </div>
+  </div>
 
-    <div class="bannerFiller"></div>
-    <div class="container">
-        <h1>Reverse Engineering for the future</h1>
-        <table class="listinfo">
-            <a href="#whatisreverseengineering">>What is Reverse Engineering?</a>
-        </table>
+  <div class="bannerFiller"></div>
+  <div class="container">
+    <h1>Reverse Engineering for the future</h1>
+    <table class="listinfo">
+      <a href="#whatisreverseengineering">>What is Reverse Engineering?</a>
+    </table>
+  </div>
+
+  <div class="banner terminalcrap slideinonview" id="banner2">
+    <div class="heading">
+      <div style="height: 75%">
+        <h1 class="slideinonview">FSFE supported</h1>
+        <h2 class="slideinonview">
+          Built in the Youth-Hacking-For-Freedom contest hosted by FSFE
+        </h2>
+      </div>
     </div>
+  </div>
 
-    
-    <div class="banner terminalcrap slideinonview" id="banner2">
-        <div class="heading">
-            <div style="height: 75%">
-                <h1 class="slideinonview">FSFE supported</h1>
-                <h2 class="slideinonview">Built in the Youth-Hacking-For-Freedom contest hosted by FSFE</h2>
-            </div>
-        </div>
+  <div class="container">
+    <div class="blackbox" id="whatisreverseengineering">
+      <h1>What is reverse engineering?</h1>
+      <p style="width: 80%">
+        Reverse engineering is the art of predicting the inner workings of any
+        closed system by looking at it's in- and outputs.
+      </p>
     </div>
-
-    <div class="container">
-
-        <div class="blackbox" id="whatisreverseengineering">
-            <h1>What is reverse engineering?</h1>
-            <p style="width:80%;">Reverse engineering is the art of predicting the inner workings of any closed system by looking at it's in- and outputs.</p>
-        </div>
-        
-    </div>
+  </div>
 </body>
-
-
 
 <script src="/js/appearonview.js"></script>
 <script>
-    console.log("start");
-    window.onscroll = function(){
-        console.log(scrollY);
+  console.log("start");
+  window.onscroll = function () {
+    console.log(scrollY);
     //  Window scrolling manager
-        if(window.scrollY >= 780) { 
-            document.getElementById("banner").style.position = "absolute";
-            
-        } if(window.scrollY < 780) {
-            document.getElementById("banner").style.position = "fixed";
-        } if(window.scroll > 927) {
-            document.getElementById("banner2").style.position = "fixed";
-        } else if(window.scroll < 927) {
-            document.getElementById("banner2").style.position = "relative";
-        }
-    };
+    if (window.scrollY >= 780) {
+      document.getElementById("banner").style.position = "absolute";
+    }
+    if (window.scrollY < 780) {
+      document.getElementById("banner").style.position = "fixed";
+    }
+    if (window.scroll > 927) {
+      document.getElementById("banner2").style.position = "fixed";
+    } else if (window.scroll < 927) {
+      document.getElementById("banner2").style.position = "relative";
+    }
+  };
 </script>

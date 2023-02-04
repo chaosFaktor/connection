@@ -1,0 +1,10 @@
+
+
+.draggable-1{
+    background-color: aquamarine;
+    width: fit-content; height:fit-content;
+    padding-left:8px; padding-right: 8px;
+}
+.dropzone-1{
+    background-color: cadetblue;
+}
